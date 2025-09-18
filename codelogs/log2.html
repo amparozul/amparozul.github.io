@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Measuring Units</title>
+
+<style>
+<body> {
+    font-family: Arial, san-serif;
+    line-height: 1.6;
+    margin:2rem;
+    background-color: #g9g9g9;
+    color: #222;
+}
+h1, h2, h3 {
+    color:#2a5d84;
+}
+code {
+    background: #ddd;
+    padding:2px 4px;
+    border-radius:4px;
+    font-size: 0.95em;
+}
+pre {
+    background: #6e5528;
+    color: #59400e;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+</style>
+</body>
+<h1> CSS Measuring Units</h1>
+
+<h2> Absoulte vs. Relative</h2>
+<p>CSS length units fall in two categories: <strong>absolute</strong> and <strong>relavite</strong>
+</p>
+<p>Absoulte units are fixed measurements thaat do not change based on other factors like viewport size or screen size. Examples include <code>px (pixels),pt (points), in (inches) and cm(centimeters).</code> These units are widely used for we designing.</p>
+ 
+<hr>
+<h2> Examples of Measuirng Units</h2>
+
+<h3> 1. px and pt</h3>
+<p>
+    A pixel is oten representing a tiny dot on a screen.
+    A point is a traditional print unit. They are rarelyy used for responsive design.
+</p>
+<prep>{
+    font-size :16px; /* fixed pixles size */
+}
+h2 {
+    font-size: 12pt; /* fixed point size */
+}
+<h3> 2. em and rem (Relative Units)</h3>
+
+<p> Em:Relative to the font-size of the parent element. Multiple em values can actually become confusing.
+    Rem: Relative to the root element's font-size.
+</p>
+<pre>{
+    font-size; 14px;
+}
+h1 {
+    font-size 2rem; /* 24px, based on root */
+}
+<h3> 3. VW and VH (Viewport Units)</h3>
+<p>VW: Relative to the width of the viewport.</p>
+<p> VH: Relative to the height of the viewport.</p>
+<p> These units are useful for fullscreen layouts and scaling when windows are resized.</p>
+
+</pre> hero{
+    width: 100vw; /* width of screen */
+    height: 100vh; /* height of screen */
+}
+</pre>
+</html>
